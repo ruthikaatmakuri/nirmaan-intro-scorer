@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-textblob
-language-tool-python
-regex
-numpy
-pydantic
