@@ -22,7 +22,8 @@ async function score() {
     const text = document.getElementById('txt').value;
     const duration = Number(document.getElementById('duration').value);
 
-    const res = await fetch("https://YOUR_RENDER_URL.onrender.com/score", {
+    const response = await fetch("https://nirmaan-intro-scorer.onrender.com/score", {
+ 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -39,3 +40,4 @@ async function score() {
 
 </body>
 </html>
+
