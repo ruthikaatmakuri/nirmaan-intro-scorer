@@ -1,0 +1,63 @@
+{
+  "weights": {
+    "content_structure": 40,
+    "speech_rate": 10,
+    "language_grammar": 20,
+    "clarity": 15,
+    "engagement": 15
+  },
+
+  "content_checks": [
+    "salutation",
+    "name",
+    "class",
+    "school",
+    "age",
+    "family_details",
+    "special_thing_about_family",
+    "hobby",
+    "fun_fact",
+    "unknown_fact",
+    "favourite_subject",
+    "subject_reason",
+    "goal",
+    "ending"
+  ],
+
+  "filler_words": [
+    "um", "uh", "hmm", "like", "you know", "literally",
+    "basically", "actually", "sort of", "kind of"
+  ],
+
+  "speech_rate_map": [
+    { "min": 110, "max": 130, "score": 10 },
+    { "min": 90, "max": 110, "score": 8 },
+    { "min": 70, "max": 90, "score": 6 },
+    { "min": 50, "max": 70, "score": 4 },
+    { "min": 0, "max": 50, "score": 2 }
+  ],
+
+  "grammar_map": [
+    { "min": 0, "max": 2, "score": 10 },
+    { "min": 3, "max": 5, "score": 8 },
+    { "min": 6, "max": 8, "score": 6 },
+    { "min": 9, "max": 12, "score": 4 },
+    { "min": 13, "max": 999, "score": 2 }
+  ],
+
+  "filler_rate_map": [
+    { "min": 0, "max": 2, "score": 15 },
+    { "min": 2, "max": 4, "score": 12 },
+    { "min": 4, "max": 6, "score": 9 },
+    { "min": 6, "max": 10, "score": 6 },
+    { "min": 10, "max": 100, "score": 3 }
+  ],
+
+  "sentiment_map": [
+    { "min": 0.6, "max": 1.0, "score": 15 },
+    { "min": 0.4, "max": 0.6, "score": 12 },
+    { "min": 0.2, "max": 0.4, "score": 9 },
+    { "min": 0.0, "max": 0.2, "score": 6 },
+    { "min": -1.0, "max": 0.0, "score": 3 }
+  ]
+}
